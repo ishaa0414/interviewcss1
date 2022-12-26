@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css interview handson 1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <h2>Explain inline , internal and external stylesheet.</h2>
+ <h4>Inline:</h4>
+ <p>In inline css we add a particular style to an element individually.We write inline css inside the tag using the attribute style.This CSS type is not really recommended, as each HTML tag needs to be styled individually.They’re useful for quick and permanent changes but are less flexible than external and internal stylesheets, as each inline style you create must be edited separately if you’re making a design change.</p>
+<h4>Internal:</h4>
+<p>In internal CSS we write the CSS properties in the head section of the html file.All the CSS styling properties are given under the style tag.All the changes done by the internal CSS can be applied only to a single web page. You can use internal CSS for one-page websites or projects where you do not want to use external CSS.</p>
+<h4>External:</h4>
+<p>In external CSS,we create a new file ending with .css extension.We link that file to the html file in which the we need to apply the styling properties.The linking is done in the head section of the html file using the link tag.We provide the styling properties by using the selectors.It has more advantageous to use this type of CSS.</p>
+<hr>
+<h2>What is css box model?</h2>
+<p>The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages.</p>
+    There are several properties in the CSS box model. They are as mentioned below:
+ <h4>Content:</h4>The content area consists of content like image, text, or other forms of media content. The height and width properties help to modify the box dimensions.
+    <h4>Padding:</h4>The padding area is the space around the content area and within the border-box. It can be applied to all sides of the box or to the specific, selected side-top, right, bottom and or left.
+    <h4>Border:</h4>The border area surrounds the padding and the content, and can be applied to all the sides of the box or to selected side- top, right, bottom or left.
+    <h4>Margin:</h4>The margin area consists of space between the border and the margin. The margin does not possess its own background color and is completely transparent. It shows the background color of the element, like the body element.
+    <hr>
+    <h2>What is the difference between padding and margin?</h2>
+    <table border="2">
+        <tr>
+            <th>PADDING</th>
+            <th>MARGIN</th>
+        </tr>
+        <tr>
+            <td>Padding controls the area immediately around your element. </td>
+            <td>Margins control the spacing width between the edges of your web page and the element itself.</td>
+        </tr>
+        <tr>
+            <td>We  can’t use negative and auto values for paddings.</td>
+            <td>Margin supports negative as well as auto values.</td>
+        </tr>
+        <tr>
+            <td>It consists of  padding-top:, padding-right:, padding-bottom:, and padding-left:.</td>
+            <td>The property consists of margin-top:, margin-right:, margin-bottom:, and margin-left:.</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Difference between flex row and column.</h2>
+    <h4>Flex-row:</h4><p>Flex row property is used to align the flex elements horizontally on the main axis.By default, the property is set to row.</p>
+    Following code shows flex row property:
+    <div class="flex">
+        <div class="row">ROW 1</div>
+        <div class="row">ROW 2</div>
+    </div>
+    <h4>Flex-column:</h4><p>Flex-column is used to align the flex items vertically ,that means perpendicular to the main axis.</p>
+    Following code shows flex row property:
+    <div class="flex2">
+        <div class="row">COLUMN 1</div>
+        <div class="row">COLUMN 2</div>
+    </div>
+    <hr>
+    <h2>Justify-content allows you to do what?</h2>
+    <p>The justify-content property aligns flex items along the main axis of the current line of the flex container. It defines how space is distributed between and around flex items.</p>
+    Possible values of justify-content:
+    <h4>Flex-start:</h4>
+   <div class="flexJ1 border">
+    <div class="row">BOX</div>
+    <div class="row">BOX</div>
+    <div class="row">BOX</div>
+   </div>
+   <h4>Flex-end:</h4>
+   <div class="flexJ2 border">
+    <div class="row">BOX</div>
+    <div class="row">BOX</div>
+    <div class="row">BOX</div>
+   </div>
+   <h4>Center:</h4>
+   <div class="flexJ3 border">
+    <div class="row">BOX</div>
+    <div class="row">BOX</div>
+    <div class="row">BOX</div>
+   </div>
+   <h4>Space-around:</h4>
+   <div class="flexJ4 border">
+    <div class="row">BOX</div>
+    <div class="row">BOX</div>
+    <div class="row">BOX</div>
+   </div>
+   <h4>Space-between:</h4>
+   <div class="flexJ5 border">
+    <div class="row">BOX</div>
+    <div class="row">BOX</div>
+    <div class="row">BOX</div>
+   </div>
+   <h4>Stretch:</h4>
+   <div class="flexJ6 border">
+    <div class="row">BOX</div>
+    <div class="row">BOX</div>
+    <div class="row">BOX</div>
+   </div>
+   <hr>
+   <h2>Difference between absolute and relative positioning.</h2>
+   <h4>Absolute Positioning:</h4>
+  <p>When we provide absolute positioning to an element, it moves with respect to the parent element.</p>
+   Following shows absolute positioning where box2 is given an absolute position of left 20px:
+   <div class="position">
+    <div class="row">BOX1</div>
+    <div class="row box2">BOX2</div>
+    <div class="row">BOX3</div>
+   </div>
+   <h4>Relative Positioning:</h4>
+  <p>When we provide relative positioning to an element, it moves with respect to the nearby elements.</p>
+   Following shows absolute positioning where box2 is given an relative position of left 20px:
+   <div class="position">
+    <div class="row">BOX1</div>
+    <div class="row box2a">BOX2</div>
+    <div class="row">BOX3</div>
+   </div>
+<hr>
+<h2>What is the z-index in CSS?</h2>
+<p> z-index  is a CSS property that defines the order of overlapping HTML elements. Elements with a higher index will be placed on top of elements with a lower index. </p>
+<p>For example:-An element with z-index 2 will be placed on top of an element with z-index 1.
+</p>
+<hr>
+</body>
+</html>
